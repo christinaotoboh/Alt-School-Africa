@@ -1,0 +1,69 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1200px;
+ margin: 0 auto;
+}
+
+.main{
+  display: flex;
+  flex-direction: row; /*This is the default direction when you used flex, but you could do column, row-reverse or column-reverse */
+}
+header{
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+.products{
+  width: 70%;
+}
+
+.products__image-container{
+
+  height: 250px;
+  background-color: #eee;
+  border-radius: 8px;
+}
+
+.products__list{
+  display: flex;
+  column-gap: 3.3%; /* Used to give space between flex items, you can do row or column gap*/
+  row-gap: 30px; /* Used to give space between flex items, you can do row or column gap*/
+  flex-wrap: wrap;
+}
+.products__list-item{
+  width: 30%;
+  text-decoration: none;
+  list-style: none; /*removes the . */
+
+}
+
+.cart{
+  width:30%;
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 8px;
+}
+.cart__heading{
+  margin-bottom: 10px;
+}
+.cart__list{
+
+}
+
+.cart__list-item{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart__list-item-details{
+  display: flex;
+}
+
+.cart__total{
+  margin: 20px 0  
+
+}

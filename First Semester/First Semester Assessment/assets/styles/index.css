@@ -1,0 +1,79 @@
+/* style.css */
+body {
+  background-color: #1c1c2b;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #2a2a3d;
+  padding: 20px;
+  border-radius: 20px;
+  width: 90vw;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.display {
+  background-color: #3c3c6e;
+  height: 60px;
+  color: #fff;
+  font-size: clamp(20px, 5vw, 24px);
+  text-align: right;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  font-size: clamp(16px, 4vw, 20px);
+  padding: clamp(10px, 4vw, 15px);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.digit {
+  background-color: #3e3e5c;
+  color: white;
+}
+
+.operator {
+  background-color: #f89b1c;
+  color: white;
+}
+
+.clear, .equals {
+  background-color: #c4c4c4;
+  color: #000;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.history {
+  margin-top: 20px;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+#history-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 14px;
+}
